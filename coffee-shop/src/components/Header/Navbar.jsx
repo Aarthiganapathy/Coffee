@@ -93,7 +93,7 @@ export const Navbar = () => {
         }}>
           {/* Logo Section */}
           <Typography
-            variant="h4"
+            variant="h3"
             component="h1"
             sx={{
               fontFamily: '"Clicker Script", cursive', 
@@ -101,7 +101,7 @@ export const Navbar = () => {
               fontStyle: "italic",
             }}
           >
-            Bean Scene
+            <b>Bean Scene</b>
           </Typography>
 
           {/* Desktop Navigation Links - Hidden on mobile */}
