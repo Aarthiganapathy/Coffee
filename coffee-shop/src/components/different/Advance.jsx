@@ -54,6 +54,7 @@ const AdvanceCard = ({ name, image, description, index }) => {
         overflow: 'hidden',
         transition: 'all 0.3s ease',
         height: '100%',
+       
         boxShadow: theme.shadows[4],
         backgroundColor: theme.palette.background.picker,
         '&:hover': {
@@ -70,7 +71,8 @@ const AdvanceCard = ({ name, image, description, index }) => {
           overflow: 'hidden',
           display: 'flex',
           alignItems: 'center',
-          justifyContent: 'center'
+          justifyContent: 'center',
+          px:3,
         }}>
           <CardMedia
             component="img"
@@ -81,7 +83,8 @@ const AdvanceCard = ({ name, image, description, index }) => {
               width: '60%',
               height: '60%',
               transition: 'transform 0.5s ease',
-              filter: 'drop-shadow(0 4px 8px rgba(0,0,0,0.2))'
+              filter: 'drop-shadow(0 4px 8px rgba(0,0,0,0.2))',
+              px:3,
             }}
           />
           <Box sx={{
@@ -90,12 +93,15 @@ const AdvanceCard = ({ name, image, description, index }) => {
             left: 0,
             right: 0,
             bottom: 0,
-            background: 'radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(0,0,0,0.3) 100%)'
+            background: 'radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(0,0,0,0.3) 100%)',
+            
           }} />
         </Box>
         <CardContent sx={{ 
           textAlign: 'center',
           padding: theme.spacing(3),
+          px:3,
+          
         }}>
           <Typography 
             gutterBottom 
@@ -137,7 +143,7 @@ const Advance = () => {
   return (
     <Box 
       sx={{ 
-        py: { xs: 8, md: 12 },
+        py: { xs: 7, md: 19 },
         position: 'relative',
         background: `linear-gradient(135deg, ${theme.palette.background.default} 0%, ${theme.palette.grey[100]} %)`,
         '&::before': {
@@ -148,7 +154,8 @@ const Advance = () => {
           right: 0,
           bottom: 0,
           backgroundImage: 'radial-gradient(circle at 75% 50%, rgba(255,255,255,0.1) 0%, transparent 30%)',
-          zIndex: 0
+          zIndex: 0,
+          
         }
         
       }}
@@ -174,7 +181,7 @@ const Advance = () => {
                 />
               </Box>
          
-      <Container maxWidth="xl" sx={{ position: 'relative', zIndex: 1 }}>
+      <Container maxWidth="xl" sx={{ position: 'relative', zIndex: 1,px:4 }}>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

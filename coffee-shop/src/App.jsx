@@ -9,6 +9,8 @@ import coffeeshop from '/coffee_image.png';
 import Contact from "./pages/Contact/Contact"; 
 import About from "./pages/About/About";
 import  Advance from "./components/different/Advance";
+import Fooderimage from './assets/image/bg_image.png';
+import SearchBox from "./components/SearchBox"; 
 
 function App() {
   return (
@@ -100,11 +102,14 @@ function App() {
             
           </Routes>
           <Advance />
-
+          <SearchBox />
           {/* Footer */}
+         
+   
           <Footer />
+          </Box>
           
-        </Box>
+        
       </ThemeProvider>
     </Router> 
   );

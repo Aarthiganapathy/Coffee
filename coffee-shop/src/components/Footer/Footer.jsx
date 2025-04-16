@@ -1,6 +1,7 @@
 import React from 'react';
 import { 
-  Box, 
+  Box,
+  
   Container, 
   Grid, 
   Typography, 
@@ -15,8 +16,9 @@ import { Facebook, Instagram, Twitter, Email, Phone, LocationOn } from '@mui/ico
 import { motion } from 'framer-motion';
 import CoffeeIcon from '@mui/icons-material/Coffee';
 import { useTheme } from '@mui/material/styles';
-import bg_image from '../../assets/image/coffee_bean.png';
-import coffee_blast from '../../assets/image/coffee_blast.png';
+
+import Fooderimage from '../../assets/image/bg_image.png';
+import cup from '../../assets/image/cup.png'; 
 
 // Enhanced styled components with better light/dark mode handling
 const FooterContainer = styled(Box)(({ theme }) => ({
@@ -107,30 +109,14 @@ const Footer = () => {
     { icon: <Phone color="primary" />, text: '(206) 555-1234' },
     { icon: <Email color="primary" />, text: 'coffee@beanscene.com' }
   ];
+  
 
   return (
-    <Box sx={{ 
-      position: 'absolute',
-      top: 50,
-      left: 20,
-      width: '100%',
-      height: '90%',
-      zIndex: 0,
-      overflow: 'hidden'
-    }}>
-      <img 
-        src={coffee_blast} 
-        alt="Coffee blast background" 
-        style={{ 
-          width: '90%',
-          height: '90%',
-          objectFit: 'cover',
-          opacity: 0.9// Make it subtle
-        }} 
-      />
+   
     
     <FooterContainer component="footer">
       {/* Enhanced background image with better light mode visibility */}
+      
       <Box sx={{ 
         position: 'absolute',
         top: 0,
@@ -138,8 +124,8 @@ const Footer = () => {
         width: '100%',
         height: '100%',
         zIndex: 0,
-        opacity: theme.palette.mode === 'light' ? 0.08 : 0.1,
-        backgroundImage: `url(${bg_image})`,
+        opacity: theme.palette.mode === 'light' ? 0.7 : 0.3,
+        backgroundImage: `url(${Fooderimage})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
@@ -148,6 +134,7 @@ const Footer = () => {
           : 'none'
       }} />
       
+      
       <Container maxWidth="lg" sx={{ position: 'relative', zIndex: 1 }}>
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -155,6 +142,35 @@ const Footer = () => {
           viewport={{ once: true, margin: isMobile ? '0px' : '-100px' }}
           transition={{ duration: 0.8 }}
         >
+           <Box sx={{
+          position: 'absolute',
+          right: 0,
+          top: '-90px',
+          width: { xs: '120px', md: '200px' },
+          opacity: 0.7,
+          zIndex: 0,
+          display: { xs: 'none', md: 'block' }
+        }}>
+                <motion.img 
+                  src={cup} 
+                  alt="Coffee cup" 
+                  style={{ 
+                    width: '500%', 
+                    height: 'auto', 
+                    maxWidth: '600px', 
+                    objectFit: 'contain',
+                    filter: 'drop-shadow(0 10px 20px rgba(193, 58, 58, 0.1))',
+                    display: 'inline-block',
+                    justifyContent: 'right', 
+                    alignItems: 'left',
+                    
+                  }} 
+                />
+              </Box>
+             
+        
+          
+        
           <Grid container spacing={4}>
             {/* About Column */}
             <Grid item xs={12} sm={6} md={4}>
@@ -465,7 +481,7 @@ const Footer = () => {
         </Box>
       </Container>
     </FooterContainer>
-    </Box>
+    
   );
 };
 
