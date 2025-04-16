@@ -16,6 +16,7 @@ import { motion } from 'framer-motion';
 import CoffeeIcon from '@mui/icons-material/Coffee';
 import { useTheme } from '@mui/material/styles';
 import bg_image from '../../assets/image/coffee_bean.png';
+import coffee_blast from '../../assets/image/coffee_blast.png';
 
 // Enhanced styled components with better light/dark mode handling
 const FooterContainer = styled(Box)(({ theme }) => ({
@@ -102,12 +103,32 @@ const Footer = () => {
   ];
 
   const contactItems = [
-    { icon: <LocationOn color="primary" />, text: '123 Coffee Street, Seattle, WA 98101' },
+    { icon: <LocationOn color="primary" />, text: '282 Coffee Street, Velachery, WA 981001' },
     { icon: <Phone color="primary" />, text: '(206) 555-1234' },
-    { icon: <Email color="primary" />, text: 'info@beanscene.com' }
+    { icon: <Email color="primary" />, text: 'coffee@beanscene.com' }
   ];
 
   return (
+    <Box sx={{ 
+      position: 'absolute',
+      top: 50,
+      left: 20,
+      width: '100%',
+      height: '90%',
+      zIndex: 0,
+      overflow: 'hidden'
+    }}>
+      <img 
+        src={coffee_blast} 
+        alt="Coffee blast background" 
+        style={{ 
+          width: '90%',
+          height: '90%',
+          objectFit: 'cover',
+          opacity: 0.9// Make it subtle
+        }} 
+      />
+    
     <FooterContainer component="footer">
       {/* Enhanced background image with better light mode visibility */}
       <Box sx={{ 
@@ -444,6 +465,7 @@ const Footer = () => {
         </Box>
       </Container>
     </FooterContainer>
+    </Box>
   );
 };
 

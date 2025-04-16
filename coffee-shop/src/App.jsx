@@ -8,6 +8,7 @@ import Footer from "./components/Footer/Footer";
 import coffeeshop from '/coffee_image.png';
 import Contact from "./pages/Contact/Contact"; 
 import About from "./pages/About/About";
+import  Advance from "./components/different/Advance";
 
 function App() {
   return (
@@ -98,9 +99,11 @@ function App() {
             } />
             
           </Routes>
+          <Advance />
 
           {/* Footer */}
           <Footer />
+          
         </Box>
       </ThemeProvider>
     </Router> 

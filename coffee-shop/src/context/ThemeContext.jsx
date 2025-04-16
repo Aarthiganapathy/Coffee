@@ -14,12 +14,16 @@ export const ThemeProvider = ({ children }) => {
       primary: {
         main: '#A67B5B',
       },
+      light: {
+        main: '#f5e9bf'
+      },
       secondary: {
         main: '#4B3621',
       },
       background: {
         default: mode === 'dark' ? '#121212' : '#ffffff',
         paper: mode === 'dark' ? '#1E1E1E' : '#A67B5B',
+        picker: mode === 'dark' ? '#ead797 ' : '#f5e9bf ' ,
       },
     },
     typography: {
