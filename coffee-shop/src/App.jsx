@@ -27,6 +27,7 @@ function App() {
           <Routes>
             {/* Home Route */}
             <Route path="/" element={
+              
               <>
                 {/* Hero Section */}
                 <Box sx={{
@@ -65,6 +66,9 @@ function App() {
                     <HeroText />
                   </Box>
                 </Box>
+               
+
+               
                 
                 {/* Main Content */}
                 <Box component="main" sx={{ 

@@ -18,7 +18,7 @@ import CoffeeIcon from '@mui/icons-material/Coffee';
 import { useTheme } from '@mui/material/styles';
 
 import Fooderimage from '../../assets/image/bg_image.png';
-import cup from '../../assets/image/cup.png'; 
+import cupbox from '../../assets/image/cup_box.png'; 
 
 // Enhanced styled components with better light/dark mode handling
 const FooterContainer = styled(Box)(({ theme }) => ({
@@ -144,22 +144,22 @@ const Footer = () => {
         >
            <Box sx={{
           position: 'absolute',
-          right: 0,
-          top: '-90px',
+          right: 100,
+          top: '80px',
           width: { xs: '120px', md: '200px' },
-          opacity: 0.7,
+          opacity: 0.9,
           zIndex: 0,
           display: { xs: 'none', md: 'block' }
         }}>
                 <motion.img 
-                  src={cup} 
+                  src={cupbox} 
                   alt="Coffee cup" 
                   style={{ 
-                    width: '500%', 
+                    width: '200%', 
                     height: 'auto', 
                     maxWidth: '600px', 
                     objectFit: 'contain',
-                    filter: 'drop-shadow(0 10px 20px rgba(193, 58, 58, 0.1))',
+                    filter: 'drop-shadow(0 10px 20px rgba(39, 34, 34, 0.1))',
                     display: 'inline-block',
                     justifyContent: 'right', 
                     alignItems: 'left',
