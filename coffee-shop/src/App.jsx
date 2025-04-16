@@ -68,7 +68,7 @@ function App() {
                 </Box>
                
 
-               
+
                 
                 {/* Main Content */}
                 <Box component="main" sx={{ 
@@ -86,13 +86,14 @@ function App() {
             {/* Menu Route - Redirects to home and scrolls to menu */}
             <Route path="/menu" element={
               <Box component="main" sx={{ pt: 8 }}>
-                <Navigate to="/" replace />
+               
               </Box>
             } />
 
             {/* Contact Route */}
             <Route path="/contact" element={
               <Box component="main" sx={{ pt: 8 }}>
+                
                 <Contact />
               </Box>
             } />
@@ -100,6 +101,7 @@ function App() {
             {/* About Route */}
             <Route path="/about" element={
               <Box component="main" sx={{ pt: 8 }}>
+                
                 <About />
               </Box>
             } />
