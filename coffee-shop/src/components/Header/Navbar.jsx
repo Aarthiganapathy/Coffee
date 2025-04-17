@@ -34,7 +34,7 @@ export const Navbar = () => {
     setMobileOpen(false);
   };
 
-  // Handle home click with smooth scroll to top
+  // Handle home click 
   const handleHomeClick = () => {
     if (location.pathname === '/') {
       window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -48,7 +48,7 @@ export const Navbar = () => {
     setMobileOpen(!mobileOpen);
   };
 
-  // Navigation items with proper click handlers
+  // Navigation routes called
   const navItems = [
     { 
       name: 'Home', 
@@ -78,7 +78,7 @@ export const Navbar = () => {
     }
   ];
 
-  // Background colors with better contrast
+  // Background colors 
   const navbarBgColor = mode === 'dark' 
     ? 'rgba(18, 18, 18, 0.95)'
     : 'rgba(255, 255, 255, 0.95)';
@@ -90,7 +90,7 @@ export const Navbar = () => {
   // Active link styling
   const isActive = (path) => location.pathname === path;
 
-  // Drawer content component
+  // Drawer---icons coding
   const drawer = (
     <Box 
       sx={{ 

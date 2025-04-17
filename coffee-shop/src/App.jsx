@@ -93,7 +93,7 @@ function App() {
               <Box component="main" sx={{ pt: 8 }}>
                
               </Box> */}
-            } />
+           
 
             {/* Contact Route */}
             <Route path="/contact" element={
