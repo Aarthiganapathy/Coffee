@@ -21,7 +21,7 @@ export const Navbar = () => {
   const { mode, toggleTheme } = useThemeContext();
   const theme = useTheme();
 
-  // Handle menu click with better scroll behavior
+  //  menu click - scroll 
   const handleMenuClick = () => {
     if (location.pathname === '/') {
       const menuSection = document.getElementById('menu-section');

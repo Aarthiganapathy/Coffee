@@ -156,6 +156,8 @@ const Advance = () => {
           backgroundImage: 'radial-gradient(circle at 75% 50%, rgba(255,255,255,0.1) 0%, transparent 30%)',
           zIndex: 0,
           
+          
+          
         }
         
       }}
@@ -193,7 +195,8 @@ const Advance = () => {
             textAlign: 'center',
             maxWidth: '800px',
             margin: '0 auto',
-            mb: { xs: 6, md: 10 }
+            mb: { xs: 6, md: 10 },
+            px: 1.0,
           }}>
             <Typography 
               variant="h2" 

@@ -36,7 +36,7 @@ const SearchBox = () => {
           position: 'absolute',
           right: isTablet ? '50px' : '100px',
           top: isTablet ? '50px' : '100px',
-          width: { sm: '150px', md: '200px', lg: '250px' },
+          width: { sm: '150px', md: '100px', lg: '250px' },
           opacity: 0.9,
           zIndex: 1,
         }}>
@@ -50,7 +50,7 @@ const SearchBox = () => {
               filter: 'drop-shadow(0 10px 20px rgba(39, 34, 34, 0.2))',
             }}
             animate={{
-              y: [0, -15, 0],
+              z: [0, -15, 0],
               rotate: [0, 5, -5, 0]
             }}
             transition={{

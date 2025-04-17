@@ -1,7 +1,6 @@
 import React from 'react';
 import { 
   Box,
-  
   Container, 
   Grid, 
   Typography, 
@@ -144,10 +143,12 @@ const Footer = () => {
         >
            <Box sx={{
           position: 'absolute',
-          right: 100,
+          right: 700,
           top: '80px',
+          left: '1000px',
+          
           width: { xs: '120px', md: '200px' },
-          opacity: 0.9,
+          opacity: 0.8,
           zIndex: 0,
           display: { xs: 'none', md: 'block' }
         }}>
@@ -155,7 +156,7 @@ const Footer = () => {
                   src={cupbox} 
                   alt="Coffee cup" 
                   style={{ 
-                    width: '200%', 
+                    width: '150%', 
                     height: 'auto', 
                     maxWidth: '600px', 
                     objectFit: 'contain',

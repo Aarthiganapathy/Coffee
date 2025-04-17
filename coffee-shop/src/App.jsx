@@ -79,7 +79,12 @@ function App() {
                 }}>
                   <Content />
                   <Category />
-                </Box>
+                 
+                  
+                  <Advance />
+                  </Box>
+                  
+                
               </>
             } />
 
@@ -107,7 +112,7 @@ function App() {
             } />
             
           </Routes>
-          <Advance />
+         
           <SearchBox />
           {/* Footer */}
          
