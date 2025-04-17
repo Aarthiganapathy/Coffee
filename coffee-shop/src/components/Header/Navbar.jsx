@@ -55,11 +55,11 @@ export const Navbar = () => {
       path: '/',
       onClick: handleHomeClick
     },
-    { 
-      name: 'Menu', 
-      path: '/menu',
-      onClick: handleMenuClick
-    },
+    // { 
+    //   name: 'Menu', 
+    //   path: '/menu',
+    //   onClick: handleMenuClick
+    // },
     { 
       name: 'About Us', 
       path: '/about',

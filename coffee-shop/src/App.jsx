@@ -84,10 +84,10 @@ function App() {
             } />
 
             {/* Menu Route - Redirects to home and scrolls to menu */}
-            <Route path="/menu" element={
+            {/* <Route path="/menu" element={
               <Box component="main" sx={{ pt: 8 }}>
                
-              </Box>
+              </Box> */}
             } />
 
             {/* Contact Route */}
